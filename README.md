@@ -1,19 +1,14 @@
 # Project Title: [] 🗺️
 
-
 ## 📖 Description
-
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 
-
 ### Installation
 
-
 ## Usage
-
 
 ### Example
 
