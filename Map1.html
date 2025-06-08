@@ -17,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_b5918072e348212a574d7e03164de218 {
+                #map_48d78844a2914d162b260c4959d7d939 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -54,14 +54,14 @@
 <body>
     
     
-            <div class="folium-map" id="map_b5918072e348212a574d7e03164de218" ></div>
+            <div class="folium-map" id="map_48d78844a2914d162b260c4959d7d939" ></div>
         
 </body>
 <script>
     
     
-            var map_b5918072e348212a574d7e03164de218 = L.map(
-                "map_b5918072e348212a574d7e03164de218",
+            var map_48d78844a2914d162b260c4959d7d939 = L.map(
+                "map_48d78844a2914d162b260c4959d7d939",
                 {
                     center: [40.4, -104.73],
                     crs: L.CRS.EPSG3857,
@@ -79,7 +79,7 @@
 
         
     
-            var tile_layer_c0a181d47109242ba6b7f1f75c7687a3 = L.tileLayer(
+            var tile_layer_baa292b4f7b9b00ae997e78aa82df028 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -96,19 +96,25 @@
             );
         
     
-            tile_layer_c0a181d47109242ba6b7f1f75c7687a3.addTo(map_b5918072e348212a574d7e03164de218);
+            tile_layer_baa292b4f7b9b00ae997e78aa82df028.addTo(map_48d78844a2914d162b260c4959d7d939);
         
     
-            var marker_6ac315fd8adbfec9804b248423ea2b27 = L.marker(
+            var feature_group_d4e18a5ecc5cf4d3a907cc5d98dde81e = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_1a615b291d36f169d11a10ff369940bb = L.marker(
                 [40.4, -104.73],
                 {
 }
-            ).addTo(map_b5918072e348212a574d7e03164de218);
+            ).addTo(feature_group_d4e18a5ecc5cf4d3a907cc5d98dde81e);
         
     
-            var icon_8c1dbcb9db067324fec210b7ea9d01f3 = L.AwesomeMarkers.icon(
+            var icon_1bc80af829fa812eb0220ca67a506210 = L.AwesomeMarkers.icon(
                 {
-  "markerColor": "green",
+  "markerColor": "beige",
   "iconColor": "white",
   "icon": "info-sign",
   "prefix": "glyphicon",
@@ -117,24 +123,65 @@
             );
         
     
-        var popup_d3dd3783435adb334055bd0c0c0c6ba1 = L.popup({
+        var popup_3e3e8f5fd33e9a70203275ffed8b1d7c = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_410dd2c451ae31015264195663aa84a9 = $(`<div id="html_410dd2c451ae31015264195663aa84a9" style="width: 100.0%; height: 100.0%;">Welcome!</div>`)[0];
-                popup_d3dd3783435adb334055bd0c0c0c6ba1.setContent(html_410dd2c451ae31015264195663aa84a9);
+                var html_a6cd751094c23bef00fbe2ec3e4732f0 = $(`<div id="html_a6cd751094c23bef00fbe2ec3e4732f0" style="width: 100.0%; height: 100.0%;">Greeley</div>`)[0];
+                popup_3e3e8f5fd33e9a70203275ffed8b1d7c.setContent(html_a6cd751094c23bef00fbe2ec3e4732f0);
             
         
 
-        marker_6ac315fd8adbfec9804b248423ea2b27.bindPopup(popup_d3dd3783435adb334055bd0c0c0c6ba1)
+        marker_1a615b291d36f169d11a10ff369940bb.bindPopup(popup_3e3e8f5fd33e9a70203275ffed8b1d7c)
         ;
 
         
     
     
-                marker_6ac315fd8adbfec9804b248423ea2b27.setIcon(icon_8c1dbcb9db067324fec210b7ea9d01f3);
+                marker_1a615b291d36f169d11a10ff369940bb.setIcon(icon_1bc80af829fa812eb0220ca67a506210);
             
+    
+            var marker_6952d69ee314af87f85130ef2194639c = L.marker(
+                [39.7392, -104.99],
+                {
+}
+            ).addTo(feature_group_d4e18a5ecc5cf4d3a907cc5d98dde81e);
+        
+    
+            var icon_ae150ef5399ac64c84c6224a3ca08ffd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d434f24274b1c0f8840f63d484eea295 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5b8082fb8a183a893dee662eda13c819 = $(`<div id="html_5b8082fb8a183a893dee662eda13c819" style="width: 100.0%; height: 100.0%;">Denver</div>`)[0];
+                popup_d434f24274b1c0f8840f63d484eea295.setContent(html_5b8082fb8a183a893dee662eda13c819);
+            
+        
+
+        marker_6952d69ee314af87f85130ef2194639c.bindPopup(popup_d434f24274b1c0f8840f63d484eea295)
+        ;
+
+        
+    
+    
+                marker_6952d69ee314af87f85130ef2194639c.setIcon(icon_ae150ef5399ac64c84c6224a3ca08ffd);
+            
+    
+            feature_group_d4e18a5ecc5cf4d3a907cc5d98dde81e.addTo(map_48d78844a2914d162b260c4959d7d939);
+        
 </script>
 </html>
