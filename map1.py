@@ -21,7 +21,7 @@ map = folium.Map(location=[40.40, -104.73], zoom_start = 6, titles = "Stamen Ter
 fg = folium.FeatureGroup(name="Map")
 
 for lt, ln, el in zip(lat, lon, elev):
-    fg.add_child(folium.Marker(location = [lt, ln], popup = str(el)+"m", icon = folium.Icon(color = color_producer(el))))
+    fg.add_child(folium.CircleMarker(location = [lt, ln], popup = str(el)+"m", fill_color = color_producer(el), color = 'grey', fill_opacity = 0.7))
 
 #for coordinates in [[40.40, -104.73], [39.7392, -104.99],[40.585258, -105.084419], [40.397789, -105.075066], [40.014984, -105.270546]]:
    # fg.add_child(folium.Marker(location = coordinates, popup = "Location", icon = folium.Icon(color = 'black')))
