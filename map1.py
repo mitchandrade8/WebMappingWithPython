@@ -6,13 +6,17 @@ lat = list(data["LAT"])
 lon = list(data["LON"])
 elev = list(data["ELEV"])
 
+# Function for elevation map color
+def color_producer():
+    return 'green'
+
 
 map = folium.Map(location=[40.40, -104.73], zoom_start = 6, titles = "Stamen Terrain")
 
 fg = folium.FeatureGroup(name="Map")
 
 for lt, ln, el in zip(lat, lon, elev):
-    fg.add_child(folium.Marker(location = [lt, ln], popup = el, icon = folium.Icon(color = 'black')))
+    fg.add_child(folium.Marker(location = [lt, ln], popup = str(el)+"m", icon = folium.Icon(color = color_producer())))
 
 #for coordinates in [[40.40, -104.73], [39.7392, -104.99],[40.585258, -105.084419], [40.397789, -105.075066], [40.014984, -105.270546]]:
    # fg.add_child(folium.Marker(location = coordinates, popup = "Location", icon = folium.Icon(color = 'black')))
